@@ -1,5 +1,3 @@
-# coding=gbk
-# -*- coding:uft-8 -*-
 # 江苏图采
 
 import requests
@@ -12,14 +10,15 @@ def main():
     headers = {
         'Host': 'jstxcj.91job.org.cn',
         'Authorization': f'Bearer {tk}',
-        'referer': 'https://servicewechat.com/wx9b3c613f1ddbf8c1/34/page-frame.html',
+        'referer': 'https://servicewechat.com/wx9b3c613f1ddbf8c1/35/page-frame.html',
         'xweb_xhr': '1',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6919',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF WindowsWechat(0x6309092b) XWEB/9079',
         'Accept': '*/*',
         'Sec-Fetch-Site': 'cross-site',
         'Sec-Fetch-Mode': 'cors',
         'Sec-Fetch-Dest': 'empty',
-        'Accept-Language': 'zh-CN,zh'
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'zh-CN,zh;q=0.9'
     }
     files = {'file': open('img.jpg', 'rb')}
     res = requests.post(url, headers=headers, files=files, verify=False, timeout=(20, 20)).text

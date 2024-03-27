@@ -1,4 +1,9 @@
 # 江苏图采上传工具
+
+## TODO
+抽空实现实现 python 抓包自动获取 Authorization
+不过不保证更新，毕竟懒狗
+
 ## ⚡讲解视频
 + [B站链接](https://www.bilibili.com/video/BV1FM4y1h72i "B站链接")
 + 视频里有使用教程和小程序绕过活体检测思路详解
